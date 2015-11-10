@@ -126,6 +126,10 @@ ifneq ($(ENABLE_CPUSETS),)
     LOCAL_CFLAGS += -DENABLE_CPUSETS
 endif
 
+ifneq ($(ENABLE_CPUSETS),)
+    LOCAL_CFLAGS += -DENABLE_CPUSETS
+endif
+
 LOCAL_SRC_FILES := \
     main_surfaceflinger.cpp
 
